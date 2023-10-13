@@ -3,6 +3,8 @@ import Home from './Home'
 import About from './About'
 import ScrollToTop from "./ScrollToTop";
 import Contact from './Contact'
+import Login from './Login'
+import SignUp from './SignUp';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 import Header from './components/Header'
@@ -49,6 +51,8 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<SignUp />} />
         </Routes>
         <Footer />
       </BrowserRouter>
